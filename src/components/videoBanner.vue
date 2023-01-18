@@ -3,7 +3,7 @@
 
 <template>
       <article class="video-banner">
-        <video poster="./assets/vue.svg" role="presentation"  loop autoplay muted>
+        <video  role="presentation"  loop autoplay muted>
         <source src="../assets/Autoheart - Time Machine (Official Music Video).mp4">
     </video>
     </article>
