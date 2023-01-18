@@ -1,10 +1,11 @@
 <script lang='ts' setup >
+import videoUrl from "../assets/Autoheart - Time Machine (Official Music Video).mp4";
 </script>
 
 <template>
       <article class="video-banner">
         <video  role="presentation"  loop autoplay muted>
-        <source src="../assets/Autoheart - Time Machine (Official Music Video).mp4">
+        <source :src="videoUrl">
     </video>
     </article>
 </template>
