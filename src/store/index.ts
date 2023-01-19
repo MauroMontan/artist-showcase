@@ -1,11 +1,11 @@
 import { defineStore } from 'pinia';
 import Artist from '../interfaces/artist';
-import OB1 from '../assets/Oscar barroso/Oscar Barroso_1.png';
-import OB2 from '../assets/Oscar barroso/Oscar Barroso_2.png';
-import OB3 from '../assets/Oscar barroso/Oscar Barroso_3.png';
-import OB4 from '../assets/Oscar barroso/Oscar Barroso_4.jpg';
-import OB5 from '../assets/Oscar barroso/Oscar Barroso_5.jpg';
-import OB6 from '../assets/Oscar barroso/Oscar Barroso_6.png';
+import OB1 from '../assets/oscar-images/Oscar Barroso_1.png';
+import OB2 from '../assets/oscar-images/Oscar Barroso_2.png';
+import OB3 from '../assets/oscar-images/Oscar Barroso_3.png';
+import OB4 from '../assets/oscar-images/Oscar Barroso_4.jpg';
+import OB5 from '../assets/oscar-images/Oscar Barroso_5.jpg';
+import OB6 from '../assets/oscar-images/Oscar Barroso_6.png';
 
 export const useUi = defineStore('uiStore', {
     state: () => ({

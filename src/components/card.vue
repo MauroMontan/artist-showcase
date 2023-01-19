@@ -58,7 +58,6 @@ const openImage = ()=>{
     height: 100%;
     width: 100%;
     border-radius: 0.5rem;
-    transition: ease all 1s;
 }
 
 span {
@@ -79,8 +78,4 @@ span {
     backdrop-filter: blur(5px);
 }
 
-
-.card-image:hover {
-    transform: scale(112%);
-}
 </style>
