@@ -74,8 +74,7 @@ span {
     border-radius: 0 0 0 0.5rem;
     display: flex;
     gap: 1rem;
-    background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.6);
 }
 
 </style>
