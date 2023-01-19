@@ -16,7 +16,7 @@ const { imageUrl } = defineProps<Props>();
 
 <style scoped>
 .image-viewer {
-    height: 40rem;
+    height: 35rem;
     margin: auto;
     width: fit-content;
     position: relative;

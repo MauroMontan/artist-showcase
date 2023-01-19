@@ -49,6 +49,7 @@ const openImage = ()=>{
     position: relative;
     overflow: hidden;
     user-select: none;
+    border: solid 1px rgba(0,0,0,0.1);
 }
 
 .card-image {
@@ -60,6 +61,10 @@ const openImage = ()=>{
     transition: ease all 1s;
 }
 
+span {
+    font-size: 1.3rem;
+}
+
 .overlay {
     position: absolute;
     height: fit-content;
@@ -67,8 +72,11 @@ const openImage = ()=>{
     top: 0;
     right: 0;
     padding: 1rem;
+    border-radius: 0 0 0 0.5rem;
     display: flex;
     gap: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
 }
 
 
