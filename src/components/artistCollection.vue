@@ -20,13 +20,13 @@ const { artwork, networks, name } = artist;
 
 <template>
 
-    <article class="artist-collection">
+    <div class="artist-collection">
         <ArtistProfile :name="name"></ArtistProfile>
         <Grid>
             <CardVue v-for="art in artwork" :card="art">
             </CardVue>
         </Grid>
-    </article>
+    </div>
 </template>
 
 <style scoped>
@@ -36,6 +36,7 @@ const { artwork, networks, name } = artist;
     gap: 0.5rem;
     margin: auto;
     width: 90%;
+    height:fit-content;
     padding: 1rem;
 }
 

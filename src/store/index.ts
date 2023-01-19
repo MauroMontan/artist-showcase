@@ -9,7 +9,7 @@ export const useUi = defineStore('uiStore', {
         currentDialogImage:"https://images.theconversation.com/files/471068/original/file-20220627-18-zlq7b6.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop",
         artistsData: [
             {
-                name: "Jose Solobiono",
+                name: "Oscar Barroso schega",
                 networks: ["Feisbook"],
                 artwork: [
                     { imageUrl: "https://images.unsplash.com/photo-1671726805768-93b4c260766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" },
@@ -25,7 +25,7 @@ export const useUi = defineStore('uiStore', {
                 ],
             },
             {
-                name: "Jose Solobiono",
+                name: "Carolina Uribe Sánchez",
                 networks: ["Feisbook"],
                 artwork: [
                     { imageUrl: "https://images.unsplash.com/photo-1671726805768-93b4c260766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" },
@@ -41,7 +41,7 @@ export const useUi = defineStore('uiStore', {
                 ],
             },
             {
-                name: "Jose Solobiono",
+                name: "Valeria Montserrat tuyub fitz",
                 networks: ["Feisbook"],
                 artwork: [
                     { imageUrl: "https://images.unsplash.com/photo-1671726805768-93b4c260766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" },
@@ -57,7 +57,7 @@ export const useUi = defineStore('uiStore', {
                 ],
             },
             {
-                name: "Jose Solobiono",
+                name: "Mara sharlott Suárez aguila",
                 networks: ["Feisbook"],
                 artwork: [
                     { imageUrl: "https://images.unsplash.com/photo-1671726805768-93b4c260766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" },

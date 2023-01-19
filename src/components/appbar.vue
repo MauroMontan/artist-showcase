@@ -18,31 +18,46 @@ const menuState = computed(() => isMenuOpened.value);
         </a>
         <nav class="links">
             <ul>
-                <li>Inicio</li>
-                <li>Artistas</li>
-                <li>¿Quienes somos?</li>
-                <li>Contacto</li>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#about"> ¿Quienes somos?</a>
+                </li>
+                <li>
+                    <a href="#artistas">Artistas</a>
+                </li>
+               
+                <li>
+                <a href="#contacto">
+                    Contacto
+                </a>    
+                </li>
             </ul>
         </nav>
 
         <span v-if="!menuState" @click="toggleMenu" class="burger material-symbols-outlined">
-            menu            
+            menu
         </span>
-        <span v-else  @click="toggleMenu" class="burger material-symbols-outlined">
-            close       
+        <span v-else @click="toggleMenu" class="burger material-symbols-outlined">
+            close
         </span>
 
     </header>
-        <div v-if="menuState" class="mobile-menu">
-            <nav class="mobile-links">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Artistas</li>
-                    <li>¿Quienes somos?</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
-        </div>
+    <div v-if="menuState" class="mobile-menu">
+        <nav class="mobile-links">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#artistas">Artistas</a>
+                </li>
+                <li>¿Quienes somos?</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </div>
 </template>
 
 <style scoped>
@@ -53,7 +68,7 @@ const menuState = computed(() => isMenuOpened.value);
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 4rem;
+    height: 3rem;
     padding-inline: 1rem;
     z-index: 20;
 }
@@ -92,6 +107,13 @@ const menuState = computed(() => isMenuOpened.value);
     list-style-type: none;
 }
 
+.appbar ul li a,
+.mobile-links ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
 .logo {
     text-decoration: none;
     font-size: 1.5rem;
@@ -114,6 +136,4 @@ const menuState = computed(() => isMenuOpened.value);
         font-size: 2rem;
     }
 }
-
-
 </style>
