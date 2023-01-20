@@ -5,15 +5,17 @@ import VideoBanner from "./components/videoBanner.vue";
 import Dialog from "./components/dialog.vue";
 import ImageViewer from "./components/imageViewer.vue";
 import { useUi } from "./store";
+import VideoModal from "./components/video_modal.vue";
 
 const uiStore = useUi();
 
-const { setcurrentImage, toggleDialog } = uiStore;
+const { toggleDialog,toggleVideoDialog } = uiStore;
 
 const { artists } = uiStore;
 </script>
 
 <template>
+    <VideoModal v-if="uiStore.isVideoModalOpened" @toggle-modal="toggleVideoDialog" ></VideoModal>
     <Dialog v-if="uiStore.isDialogOpened" @close-overlay="toggleDialog">
         <ImageViewer :imageUrl="uiStore.imageUrl"></ImageViewer>
     </Dialog>
@@ -48,15 +50,24 @@ html {
     color-scheme: light;
     scroll-behavior: smooth;
 }
+
 .material-icons {
     transition: opacity 0.9s;
 }
 
 * {
-    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    font-display: swap;
 }
 
 #app {

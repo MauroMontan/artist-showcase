@@ -10,6 +10,7 @@ import OB6 from '../assets/oscar-images/Oscar Barroso_6.png';
 export const useUi = defineStore('uiStore', {
     state: () => ({
         isDialogOpened: false,
+        isVideoModalOpened:false,
         currentDialogImage:
             'https://images.theconversation.com/files/471068/original/file-20220627-18-zlq7b6.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
         artistsData: [
@@ -197,12 +198,16 @@ export const useUi = defineStore('uiStore', {
     }),
     getters: {
         dialogState: (state) => state.isDialogOpened,
+        videoDialogState: (state) => state.isVideoModalOpened,
         artists: (state): Array<Artist> => state.artistsData,
         imageUrl: (state): string => state.currentDialogImage,
     },
     actions: {
         toggleDialog(): void {
             this.isDialogOpened = !this.isDialogOpened;
+        },
+        toggleVideoDialog(): void {
+            this.isVideoModalOpened = !this.isVideoModalOpened;
         },
         setcurrentImage(imageUrl: string): void {
             this.currentDialogImage = imageUrl;

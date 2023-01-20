@@ -18,6 +18,10 @@ const openImage = ()=>{
     uiStore.toggleDialog();
 }
 
+const openVideo = ()=>{
+    uiStore.toggleVideoDialog();
+}
+
 </script>
 
 <template>
@@ -29,7 +33,7 @@ const openImage = ()=>{
             <span @click="openImage" class="material-symbols-outlined">
                 open_in_full
             </span>
-            <span class="material-symbols-outlined">
+            <span @click="openVideo" class="material-symbols-outlined">
                 play_circle
             </span>
 
