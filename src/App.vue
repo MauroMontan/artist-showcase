@@ -298,5 +298,14 @@ footer {
         padding: 0;
         gap: 1rem;
     }
+    .contact{
+        width: 100%;
+        padding: 1rem;
+    }
+    .contact-card{
+        width: 100%;
+        padding: 2rem;
+        text-align:center;
+    }
 }
 </style>
