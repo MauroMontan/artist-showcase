@@ -20,7 +20,7 @@ const emit = defineEmits<Emit>();
 <style scoped>
 .video-modal {
     margin: auto;
-    width: 90%;
+    width: 60%;
     height: 80vh;
     overflow: hidden;
     display: flex;
