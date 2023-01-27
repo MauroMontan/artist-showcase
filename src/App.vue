@@ -305,7 +305,9 @@ footer {
     .contact-card{
         width: 100%;
         padding: 2rem;
+        gap: 1rem;
         text-align:center;
+        justify-content: space-around;
     }
 }
 </style>
