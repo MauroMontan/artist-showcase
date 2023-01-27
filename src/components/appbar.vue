@@ -14,7 +14,7 @@ const menuState = computed(() => isMenuOpened.value);
 <template>
     <header class="appbar">
         <a class="logo" href="#">
-            Un logo chido
+            Casa Nomada
         </a>
         <nav class="links">
             <ul>
