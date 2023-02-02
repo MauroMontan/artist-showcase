@@ -21,7 +21,7 @@ const { artwork, networks, name } = artist;
 <template>
 
     <div class="artist-collection">
-        <ArtistProfile :name="name"></ArtistProfile>
+        <ArtistProfile :name="name" :networks="networks" ></ArtistProfile>
         <Grid>
             <CardVue v-for="art in artwork" :card="art">
             </CardVue>

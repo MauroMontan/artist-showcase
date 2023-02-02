@@ -20,6 +20,9 @@ const { imageUrl } = defineProps<Props>();
     margin: auto;
     width: fit-content;
     position: relative;
+    height:80vh;
+    background-color: black;
+    border-radius: 1rem;
 }
 
 .image-viewer img {
@@ -35,9 +38,13 @@ const { imageUrl } = defineProps<Props>();
 
 @media (max-width:768px) {
     .image-viewer {
-        height: fit-content;
-        margin: auto;
+        margin:auto;
         width:90%;
+        height:70%;
     }
+    .image-viewer img{
+        object-fit:scale-down;
+    }
+    
 }
 </style>

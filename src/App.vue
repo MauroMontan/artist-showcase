@@ -26,26 +26,7 @@ const { artists } = uiStore;
 
     <VideoBanner id="inicio"></VideoBanner>
 
-    <article class="banner">
-        <div class="banner-info">
-            <h1>Arallia</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                velit recusandae consequuntur, enim officiis vel ullam deserunt,
-                officia animi laudantium dolore! Doloribus dolores voluptates
-                quisquam! Nobis nemo officiis earum ad. Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Explicabo eligendi illo
-                maiores quis dolorum eos, corrupti nisi cupiditate
-            </p>
-        </div>
-
-        <div class="image-container">
-            <img
-                src="https://cdn.discordapp.com/attachments/888619711758229535/1065800773449044029/WhatsApp_Image_2023-01-12_at_9.03.10_PM.jpeg"
-                alt="aralia"
-            />
-        </div>
-    </article>
+ 
 
     <article id="about" class="about">
         <h1>¿Quienes somos?</h1>
@@ -74,14 +55,15 @@ const { artists } = uiStore;
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
 
-            <a href="mailto: abc@example.com" class="material-symbols-outlined">
+            <a href="mailto: solamentevagotrabajo@gmail.com" class="material-symbols-outlined">
                 mail
             </a>
-            <i>email@gmail.com</i>
+            <i>solamentevagotrabajo@gmail.com</i>
         </div>
     </article>
     <footer>
-        Copyright © 2023 Casa productora Nómada. Todos los derechos reservados.
+     <p>   Copyright © 2023 Casa productora Nómada. Todos los derechos reservados.</p>
+     <p class="creator">made by @MauroMontan</p>
     </footer>
 </template>
 
@@ -246,11 +228,18 @@ html {
 }
 
 .contact-card a:active {
-    transform: scale(110%);
+    transform: scale(90%);
 }
 
 footer {
     padding: 0.5rem;
+    display: flex;
+    padding-inline: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .creator{
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

@@ -63,12 +63,12 @@ const menuState = computed(() => isMenuOpened.value);
 <style scoped>
 .appbar {
     display: flex;
-    background-color: white;
+    background-color:white;
     position: fixed;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 3rem;
+    height: 4rem;
     padding-inline: 1rem;
     z-index: 20;
 }
