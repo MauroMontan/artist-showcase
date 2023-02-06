@@ -7,6 +7,7 @@ import ImageViewer from "./components/imageViewer.vue";
 import { useUi } from "./store";
 import VideoModal from "./components/video_modal.vue";
 
+
 const uiStore = useUi();
 
 const { toggleDialog, toggleVideoDialog } = uiStore;
@@ -25,8 +26,6 @@ const { artists } = uiStore;
     <Appbar></Appbar>
 
     <VideoBanner id="inicio"></VideoBanner>
-
- 
 
     <article id="about" class="about">
         <h1>¿Quienes somos?</h1>
@@ -48,7 +47,7 @@ const { artists } = uiStore;
         ></ArtistCollection>
     </article>
 
-    <article class="contact">
+    <article id="contacto" class="contact">
         <div class="contact-card">
             <div class="title">
                 <h1>Interesado en trabajar con nosotros?</h1>
@@ -113,7 +112,7 @@ html {
     font-size: 2rem;
 }
 .about p {
-    padding: 2rem;
+    padding: 1rem;
     font-size: x-large;
     line-height: 2;
 }
@@ -202,9 +201,13 @@ html {
     gap: 1rem;
 }
 
+.contact .contact-card p{
+    color: lightslategray;
+}
+
 .contact-card {
     padding: 3.5rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -225,10 +228,15 @@ html {
     border-radius: 0.5rem;
     font-size: 5rem;
     transition: all ease 0.5s;
+    
 }
 
 .contact-card a:active {
     transform: scale(90%);
+}
+.contact-card i {
+    font-weight: bolder;
+    font-style: normal;
 }
 
 footer {
@@ -237,10 +245,13 @@ footer {
     padding-inline: 5rem;
     align-items: center;
     justify-content: space-between;
+    color:lightslategray;
 }
 footer .creator{
     font-weight: bold;
+    color: lightgray;
 }
+
 
 @media (max-width: 768px) {
     .collections h2 {
@@ -249,7 +260,6 @@ footer .creator{
     }
 
     .about {
-        padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -259,13 +269,12 @@ footer .creator{
 
     .about h1 {
         font-size: 2rem;
-        text-align: center;
     }
     .about p {
         font-size: larger;
-        padding: 0;
-        line-height: 1.5;
-        text-align: center;
+        padding-inline: 1rem;
+        word-break:break-all;
+        line-height: 2;
     }
     .banner {
         height: fit-content;
@@ -293,10 +302,20 @@ footer .creator{
     }
     .contact-card{
         width: 100%;
-        padding: 2rem;
+        padding: 1rem;
         gap: 1rem;
         text-align:center;
         justify-content: space-around;
     }
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        padding-inline: 0.5rem;
+        font-size: 0.8rem;
+
+}
 }
 </style>

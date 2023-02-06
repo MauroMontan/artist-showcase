@@ -1,17 +1,13 @@
 import { defineStore } from 'pinia';
 import Artist from '../interfaces/artist';
-import OB1 from '../assets/oscar-images/Oscar Barroso_1.png';
-import OB2 from '../assets/oscar-images/Oscar Barroso_2.png';
-import OB3 from '../assets/oscar-images/Oscar Barroso_3.png';
-import OB4 from '../assets/oscar-images/Oscar Barroso_4.jpg';
-import OB5 from '../assets/oscar-images/Oscar Barroso_5.jpg';
-import OB6 from '../assets/oscar-images/Oscar Barroso_6.png';
-import Network from '../interfaces/network';
+
+
 
 export const useUi = defineStore('uiStore', {
-    state: () => ({
-        isDialogOpened: false,
-        isVideoModalOpened: false,
+
+state: () => ({
+    isDialogOpened: false,
+    isVideoModalOpened: false,
         currentDialogImage:
             'https://images.theconversation.com/files/471068/original/file-20220627-18-zlq7b6.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
         artistsData: [

@@ -1,5 +1,6 @@
 <script lang='ts' setup >
 import { ref, Ref, computed } from 'vue';
+import logo from "../assets/casanomadalogo.png";
 
 const isMenuOpened: Ref<boolean> = ref(false);
 
@@ -13,9 +14,8 @@ const menuState = computed(() => isMenuOpened.value);
 
 <template>
     <header class="appbar">
-        <a class="logo" href="#">
-            Casa Nomada
-        </a>
+        <img alt="casa nomada logo" :src="logo" class="logo" >
+            
         <nav class="links">
             <ul>
                 <li>
@@ -51,10 +51,15 @@ const menuState = computed(() => isMenuOpened.value);
                     <a href="#inicio">Inicio</a>
                 </li>
                 <li>
+                    <a href="#about">¿Quienes somos?</a>
+                </li>
+                <li>
                     <a href="#artistas">Artistas</a>
                 </li>
-                <li>¿Quienes somos?</li>
-                <li>Contacto</li>
+             
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -69,7 +74,7 @@ const menuState = computed(() => isMenuOpened.value);
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     z-index: 20;
 }
 
@@ -115,9 +120,9 @@ const menuState = computed(() => isMenuOpened.value);
 }
 
 .logo {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
+    width:fit-content;
+    height: 30%;
+    object-fit: scale-down;
 }
 
 .burger {
@@ -129,6 +134,10 @@ const menuState = computed(() => isMenuOpened.value);
 @media (max-width:768px) {
     .links {
         display: none;
+    }
+
+    .appbar{
+        padding: 0.5rem;
     }
 
     .burger {
