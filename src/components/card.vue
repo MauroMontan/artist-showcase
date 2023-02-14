@@ -1,5 +1,5 @@
 <script lang='ts' setup >
-import { ref, Ref, computed, defineProps } from 'vue'
+import { ref, Ref, computed } from 'vue'
 import Card from '../interfaces/card';
 import { useUi } from '../store';
 
@@ -9,7 +9,7 @@ interface Props {
 
 const { card } = defineProps<Props>();
 
-const {  imageUrl } = card;
+const {  imageUrl,videoUrl } = card;
 
 const uiStore = useUi();
 
@@ -19,8 +19,13 @@ const openImage = ()=>{
 }
 
 const openVideo = ()=>{
+    uiStore.setcurrentVideo(videoUrl!);
     uiStore.toggleVideoDialog();
 }
+
+const isVideo = computed(()=>{
+    return videoUrl != undefined;
+});
 
 </script>
 
@@ -30,12 +35,13 @@ const openVideo = ()=>{
         <img class="card-image" :src="imageUrl" alt="placholdercad">
         <div class="overlay">
 
-            <span @click="openImage" class="material-symbols-outlined">
-                open_in_full
-            </span>
-            <span @click="openVideo" class="material-symbols-outlined">
+            <span v-if="isVideo" @click="openVideo" class="material-symbols-outlined">
                 play_circle
             </span>
+            <span v-else @click="openImage" class="material-symbols-outlined">
+                open_in_full
+            </span>
+          
 
         </div>
     </article>
@@ -74,13 +80,16 @@ span {
     width: fit-content;
     top: 0;
     right: 0;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 0 0 0 0.5rem;
     display: flex;
     gap: 1rem;
     background-color: rgba(0,0,0,0.6);
 }
 
+.overlay span{
+    font-size: 1.6rem;
+}
 
 
 </style>

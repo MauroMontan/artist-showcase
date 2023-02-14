@@ -116,7 +116,14 @@ const menuState = computed(() => isMenuOpened.value);
 .mobile-links ul li a {
     text-decoration: none;
     color: inherit;
-    font-weight: bold;
+    font-weight:200;
+    transition: all ease-in 0.1s;
+}
+
+
+.appbar ul li a:hover,
+.mobile-links ul li a :hover {
+    font-weight:bolder;
 }
 
 .logo {

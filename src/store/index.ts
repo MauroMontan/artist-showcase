@@ -8,6 +8,7 @@ export const useUi = defineStore('uiStore', {
 state: () => ({
     isDialogOpened: false,
     isVideoModalOpened: false,
+    currentVideo:"",
         currentDialogImage:
             'https://images.theconversation.com/files/471068/original/file-20220627-18-zlq7b6.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
         artistsData: [
@@ -55,6 +56,7 @@ state: () => ({
                 ],
                 artwork: [
                     {
+                        videoUrl:"https://www.youtube.com/embed/XUd2S8a2ChQ",
                         imageUrl:
                             'https://images.unsplash.com/photo-1671726805768-93b4c260766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
                     },
@@ -133,6 +135,7 @@ state: () => ({
         videoDialogState: (state) => state.isVideoModalOpened,
         artists: (state): Array<Artist> => state.artistsData,
         imageUrl: (state): string => state.currentDialogImage,
+        videoUrl:(state)=> state.currentVideo,
     },
     actions: {
         toggleDialog(): void {
@@ -143,6 +146,9 @@ state: () => ({
         },
         setcurrentImage(imageUrl: string): void {
             this.currentDialogImage = imageUrl;
+        },
+        setcurrentVideo(videoUrl: string): void {
+            this.currentVideo = videoUrl;
         },
     },
 });

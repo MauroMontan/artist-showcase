@@ -7,12 +7,14 @@ interface Emit {
     (event: "toggle-modal"): void;
 }
 const emit = defineEmits<Emit>();
+const {videoUrl} = uiStore;
+
 </script>
 
 <template>
     <Dialog @close-overlay="emit('toggle-modal')">
         <div class="video-modal">
-            <iframe src="https://www.youtube.com/embed/mpaPBCBjSVc"></iframe>
+            <iframe :src="videoUrl"></iframe>
         </div>
     </Dialog>
 </template>

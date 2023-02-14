@@ -7,7 +7,6 @@ import ImageViewer from "./components/imageViewer.vue";
 import { useUi } from "./store";
 import VideoModal from "./components/video_modal.vue";
 
-
 const uiStore = useUi();
 
 const { toggleDialog, toggleVideoDialog } = uiStore;
@@ -30,11 +29,10 @@ const { artists } = uiStore;
     <article id="about" class="about">
         <h1>¿Quienes somos?</h1>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            eligendi illo maiores quis dolorum eos, corrupti nisi cupiditate
-            voluptate accusamus. Repellendus expedita facilis temporibus
-            repellat minima quaerat inventore nisi amet. Lorem, ipsum dolor sit
-            amet consectetur adipisicing elit. Explicabo
+            Somos una casa hecha por y para artistas, nos reunimos para
+            desarrollar proyectos independientes donde cualquiera puede proponer
+            y dirigir un proyecto en conjunto de un grupo de talentosos
+            artistas.
         </p>
     </article>
 
@@ -50,19 +48,28 @@ const { artists } = uiStore;
     <article id="contacto" class="contact">
         <div class="contact-card">
             <div class="title">
-                <h1>Interesado en trabajar con nosotros?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h1>¿Interesado en unirte al equipo?</h1>
+                <p>
+                    Mandame tu reel, portafolio o platicame tu idea al siguiente
+                    correo.
+                </p>
             </div>
 
-            <a href="mailto: solamentevagotrabajo@gmail.com" class="material-symbols-outlined">
+            <a
+                href="mailto: solamentevagotrabajo@gmail.com"
+                class="material-symbols-outlined"
+            >
                 mail
             </a>
             <i>solamentevagotrabajo@gmail.com</i>
         </div>
     </article>
     <footer>
-     <p>   Copyright © 2023 Casa productora Nómada. Todos los derechos reservados.</p>
-     <p class="creator">made by @MauroMontan</p>
+        <p>
+            Copyright © 2023 Casa productora Nómada. Todos los derechos
+            reservados.
+        </p>
+        <p class="creator">made by @MauroMontan</p>
     </footer>
 </template>
 
@@ -197,11 +204,12 @@ html {
 .contact .contact-card .title {
     width: 100%;
     display: flex;
+    text-align: center;
     flex-direction: column;
     gap: 1rem;
 }
 
-.contact .contact-card p{
+.contact .contact-card p {
     color: lightslategray;
 }
 
@@ -228,7 +236,6 @@ html {
     border-radius: 0.5rem;
     font-size: 5rem;
     transition: all ease 0.5s;
-    
 }
 
 .contact-card a:active {
@@ -245,13 +252,12 @@ footer {
     padding-inline: 5rem;
     align-items: center;
     justify-content: space-between;
-    color:lightslategray;
+    color: lightslategray;
 }
-footer .creator{
+footer .creator {
     font-weight: bold;
     color: lightgray;
 }
-
 
 @media (max-width: 768px) {
     .collections h2 {
@@ -273,7 +279,7 @@ footer .creator{
     .about p {
         font-size: larger;
         padding-inline: 1rem;
-        word-break:break-all;
+        word-break: break-all;
         line-height: 2;
     }
     .banner {
@@ -296,15 +302,15 @@ footer .creator{
         padding: 0;
         gap: 1rem;
     }
-    .contact{
+    .contact {
         width: 100%;
         padding: 1rem;
     }
-    .contact-card{
+    .contact-card {
         width: 100%;
         padding: 1rem;
         gap: 1rem;
-        text-align:center;
+        text-align: center;
         justify-content: space-around;
     }
     footer {
@@ -315,7 +321,6 @@ footer .creator{
         padding: 1rem;
         padding-inline: 0.5rem;
         font-size: 0.8rem;
-
-}
+    }
 }
 </style>

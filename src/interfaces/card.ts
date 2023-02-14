@@ -1,4 +1,4 @@
-
 export default interface Card {
-    imageUrl:string;
+    imageUrl: string;
+    videoUrl?: string;
 }
