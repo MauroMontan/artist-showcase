@@ -39,7 +39,12 @@ const {videoUrl} = uiStore;
 
 @media(max-height:786px){
     .video-modal{
-    width:90%
+    width:90%;
+    aspect-ratio:1/16;
+    }
+    iframe {
+    object-position:center;
+    height:100%;
     }
 }
 
