@@ -37,4 +37,10 @@ const {videoUrl} = uiStore;
     border-radius: 1rem;
 }
 
+@media(max-height:786px){
+    .video-modal{
+    width:90%
+    }
+}
+
 </style>
