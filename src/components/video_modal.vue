@@ -22,8 +22,8 @@ const {videoUrl} = uiStore;
 <style scoped>
 .video-modal {
     margin: auto;
-    width: 60%;
-    height: 80vh;
+    width: 50%;
+    height: 65vh;
     overflow: hidden;
     display: flex;
     border: none;
