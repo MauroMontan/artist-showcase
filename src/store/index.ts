@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import Artist from '../interfaces/artist';
 import Armando_1 from "../assets/artwork/Armando/photo1674244574.jpeg"
-import Armando_1_video from "../assets/artwork/ArmandO/video5069272976604529394.mp4"
+import Armando_1_video from "../assets/artwork/Armando/video5069272976604529394.mp4"
 import Armando_2_video from "../assets/artwork/Armando/video5069272976604529393.mp4";
 import Armando_2 from "../assets/artwork/Armando/ssp_thumb.png";
 import White from "../assets/artwork/White/TheWhiteNight_Obras/Jack_1_0001.png";
