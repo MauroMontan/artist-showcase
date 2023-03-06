@@ -34,9 +34,8 @@ const wheelBeh = () => {
     display: flex;
     width: 100%;
     height: 24rem;
-    border-radius: 1rem;
     overflow-x:scroll;
-    gap: 1.2rem;
+    gap: 0.2rem;
     padding:0.5rem;
 }
 

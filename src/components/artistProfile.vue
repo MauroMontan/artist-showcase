@@ -56,10 +56,11 @@ const LogoSelector = computed(()=>{
 }
 .artist-profile {
     display: flex;
+    height: fit-content;
     align-items: center;
-    min-height: fit-content;
     gap: 0.5rem;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .about-artist {
@@ -77,6 +78,7 @@ const LogoSelector = computed(()=>{
 .artist-profile .networks {
     display: flex;
     gap: 1rem;
+    height:fit-content;
 }
 .artist-profile .networks li {
     list-style-type: none;
@@ -92,7 +94,6 @@ const LogoSelector = computed(()=>{
 .artist-profile h1 {
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 1rem;
     max-width: 60%;
  }
 

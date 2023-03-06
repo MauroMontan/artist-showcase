@@ -103,16 +103,18 @@ html {
 #app {
     width: 100%;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
 }
 
 .about {
-    padding-top: 3rem;
     display: flex;
     flex-direction: column;
+    width: 90%;
     gap: 0.5rem;
     margin: auto;
-    width: 90%;
+    padding-top: 3rem;
+    padding-bottom:3rem;
 }
 
 .about h1 {
@@ -125,13 +127,16 @@ html {
 }
 
 .collections {
-    font-size: 2rem;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 90%;
 }
 
 .collections h2 {
     font-size: 2rem;
-    margin-top: 3rem;
-    margin-left: 5rem;
 }
 
 .banner {

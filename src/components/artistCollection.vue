@@ -33,11 +33,14 @@ const { artwork, networks, name } = artist;
 .artist-collection {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 10px 36px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
+    gap: 0.2rem;
+    padding: 0.5rem;
     margin: auto;
     width: 90%;
     height:fit-content;
-    padding: 1rem;
+
 }
 
 @media (max-width:768px) {
