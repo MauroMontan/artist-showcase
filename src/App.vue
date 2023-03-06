@@ -42,7 +42,7 @@ const { artists } = uiStore;
         <ArtistCollection
             v-for="artist in artists"
             :artist="artist"
-            v-motion-fade-visible-once
+           
         ></ArtistCollection>
     </article>
 
@@ -131,7 +131,7 @@ html {
     margin: auto;
     display:flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0.5rem;
     width: 90%;
 }
@@ -266,6 +266,10 @@ footer .creator {
 }
 
 @media (max-width: 768px) {
+
+    .collections{
+        width: 100%;
+    }
     .collections h2 {
         font-size: 1.6rem;
         margin-left: 1rem;

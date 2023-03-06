@@ -20,11 +20,13 @@ const { artwork, networks, name } = artist;
 
 <template>
 
-    <div class="artist-collection">
+    <div 
+    v-motion-slide-visible-once-bottom
+     class="artist-collection">
         <ArtistProfile :name="name" :networks="networks" ></ArtistProfile>
         <Grid>
             <CardVue 
-            v-motion-pop-visible
+           
             v-for="art in artwork" :card="art">
             </CardVue>
         </Grid>
@@ -48,6 +50,7 @@ const { artwork, networks, name } = artist;
 @media (max-width:768px) {
     .artist-collection {
         width: 100%;
+        padding: 0;
     }
 }
 </style>

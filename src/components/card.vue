@@ -31,7 +31,8 @@ const isVideo = computed(()=>{
 
 <template>
  
-    <article class="card">
+    <article
+    class="card">
         <img class="card-image" :src="imageUrl" alt="placholdercad">
         <div class="overlay">
 
@@ -90,6 +91,7 @@ span {
 .overlay span{
     font-size: 1.6rem;
 }
+
 
 
 </style>
