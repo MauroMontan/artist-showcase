@@ -23,7 +23,9 @@ const { artwork, networks, name } = artist;
     <div class="artist-collection">
         <ArtistProfile :name="name" :networks="networks" ></ArtistProfile>
         <Grid>
-            <CardVue v-for="art in artwork" :card="art">
+            <CardVue 
+            v-motion-pop-visible
+            v-for="art in artwork" :card="art">
             </CardVue>
         </Grid>
     </div>

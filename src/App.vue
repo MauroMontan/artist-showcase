@@ -42,6 +42,7 @@ const { artists } = uiStore;
         <ArtistCollection
             v-for="artist in artists"
             :artist="artist"
+            v-motion-fade-visible-once
         ></ArtistCollection>
     </article>
 
