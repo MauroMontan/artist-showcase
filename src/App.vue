@@ -17,31 +17,24 @@ const { artists } = uiStore;
 </script>
 
 <template>
-    <VideoModal
-        v-if="uiStore.isVideoModalOpened"
-        @toggle-modal="toggleVideoDialog"
-    ></VideoModal>
+    <VideoModal v-if="uiStore.isVideoModalOpened" @toggle-modal="toggleVideoDialog"></VideoModal>
     <Dialog v-if="uiStore.isDialogOpened" @close-overlay="toggleDialog">
         <ImageViewer :imageUrl="uiStore.imageUrl"></ImageViewer>
     </Dialog>
-    <Appbar/>
+    <Appbar />
 
-    <VideoBanner id="inicio"/>
+    <VideoBanner id="inicio" />
 
     <About></About>
 
     <article id="artistas" class="collections">
         <h2>Nuestros Artistas</h2>
 
-        <ArtistCollection
-            v-for="artist in artists"
-            :artist="artist"
-           
-        ></ArtistCollection>
+        <ArtistCollection v-for="artist in artists" :artist="artist"></ArtistCollection>
     </article>
 
-    <Contact/>
-    
+    <Contact />
+
     <footer>
         <p>
             Copyright © 2023 Casa productora Nómada. Todos los derechos
@@ -85,7 +78,7 @@ html {
 
 .collections {
     margin: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 0.5rem;
@@ -101,14 +94,12 @@ html {
     padding: 3rem;
     display: flex;
     height: 35rem;
-    background-image: linear-gradient(
-        to left,
-        #1b3460,
-        #364c78,
-        #506691,
-        #6a80aa,
-        #859cc4
-    );
+    background-image: linear-gradient(to left,
+            #1b3460,
+            #364c78,
+            #506691,
+            #6a80aa,
+            #859cc4);
     gap: 5rem;
     color: rgb(8, 19, 36);
 }
@@ -153,13 +144,15 @@ html {
 
 
 footer {
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
-    padding-inline: 5rem;
-    align-items: center;
+    height: 10rem;
+    padding-inline: 3rem;
+    align-items: end;
     justify-content: space-between;
     color: lightslategray;
 }
+
 footer .creator {
     font-weight: bold;
     color: lightgray;
@@ -167,41 +160,43 @@ footer .creator {
 
 @media (max-width: 768px) {
 
-    .collections{
+    .collections {
         width: 100%;
     }
+
     .collections h2 {
         font-size: 1.6rem;
         margin-left: 1rem;
     }
 
-   
+
     .banner {
         height: fit-content;
         flex-direction: column;
         align-items: center;
         width: 100%;
         gap: 3rem;
-        background-image: linear-gradient(
-            to top,
-            #1b3460,
-            #364c78,
-            #506691,
-            #6a80aa,
-            #859cc4
-        );
+        background-image: linear-gradient(to top,
+                #1b3460,
+                #364c78,
+                #506691,
+                #6a80aa,
+                #859cc4);
     }
+
     .banner .banner-info {
         width: 100%;
         padding: 0;
         gap: 1rem;
     }
-   
+
     footer {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
-        gap: 0.5rem;
+        gap: 1rem;
+        height: fit-content;
         padding: 1rem;
         padding-inline: 0.5rem;
         font-size: 0.8rem;

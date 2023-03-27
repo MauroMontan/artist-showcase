@@ -11,10 +11,7 @@
                 </p>
             </div>
 
-            <a
-                href="mailto: solamentevagotrabajo@gmail.com"
-                class="material-symbols-outlined"
-            >
+            <a href="mailto: solamentevagotrabajo@gmail.com" class="material-symbols-outlined">
                 mail
             </a>
             <i>solamentevagotrabajo@gmail.com</i>
@@ -30,11 +27,13 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
+
 .contact .contact-card .title h1 {
     font-size: 1.5rem;
 }
+
 .contact .contact-card .title {
     width: 100%;
     display: flex;
@@ -60,6 +59,7 @@
     width: fit-content;
     border-radius: 1rem;
 }
+
 .contact-card a {
     text-decoration: none;
     color: black;
@@ -75,6 +75,7 @@
 .contact-card a:active {
     transform: scale(90%);
 }
+
 .contact-card i {
     font-weight: bolder;
     font-style: normal;
@@ -85,6 +86,7 @@
         width: 100%;
         padding: 1rem;
     }
+
     .contact-card {
         width: 100%;
         padding: 1rem;

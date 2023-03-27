@@ -19,47 +19,47 @@ import Nagatsuro_7 from "../assets/artwork/Nagatsuro/nagatsuro7.jpg";
 
 export const useUi = defineStore('uiStore', {
 
-state: () => ({
-    isDialogOpened: false,
-    isVideoModalOpened: false,
-    currentVideo:"",
+    state: () => ({
+        isDialogOpened: false,
+        isVideoModalOpened: false,
+        currentVideo: "",
         currentDialogImage:
             'https://images.theconversation.com/files/471068/original/file-20220627-18-zlq7b6.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
         artistsData: [
             {
-                name:"Carolina Uribe Sánchez",
-                networks:[
+                name: "Carolina Uribe Sánchez",
+                networks: [
                     {
-                        type:"instagram",
-                        url:"https://www.instagram.com/creati_caro/",
-                        hint:"Instagram"
+                        type: "instagram",
+                        url: "https://www.instagram.com/creati_caro/",
+                        hint: "Instagram"
                     },
                     {
-                        type:"portfolio",
-                        url:"https://creaticaro.wixsite.com/creator",
-                        hint:"Portfolio"
+                        type: "portfolio",
+                        url: "https://creaticaro.wixsite.com/creator",
+                        hint: "Portfolio"
                     }
                 ],
-                artwork:[
+                artwork: [
                     {
-                        imageUrl:"https://static.wixstatic.com/media/332e86_5e0ad03b7f6e46ebaa85e28a960f22cef000.jpg/v1/fill/w_314,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_5e0ad03b7f6e46ebaa85e28a960f22cef000.jpg"
+                        imageUrl: "https://static.wixstatic.com/media/332e86_5e0ad03b7f6e46ebaa85e28a960f22cef000.jpg/v1/fill/w_314,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_5e0ad03b7f6e46ebaa85e28a960f22cef000.jpg"
 
                     },
-                    {imageUrl:"https://static.wixstatic.com/media/332e86_c2206ab1df3a499b8fe59eb39bc73259f000.jpg/v1/fill/w_313,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_c2206ab1df3a499b8fe59eb39bc73259f000.jpg"},
+                    { imageUrl: "https://static.wixstatic.com/media/332e86_c2206ab1df3a499b8fe59eb39bc73259f000.jpg/v1/fill/w_313,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_c2206ab1df3a499b8fe59eb39bc73259f000.jpg" },
                     {
-                        imageUrl:"https://static.wixstatic.com/media/332e86_cc549ba7eaf4473190260b6c22c86f16f000.jpg/v1/fill/w_313,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_cc549ba7eaf4473190260b6c22c86f16f000.jpg"
+                        imageUrl: "https://static.wixstatic.com/media/332e86_cc549ba7eaf4473190260b6c22c86f16f000.jpg/v1/fill/w_313,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_cc549ba7eaf4473190260b6c22c86f16f000.jpg"
                     },
                     {
-                        imageUrl:"https://static.wixstatic.com/media/332e86_bbd1c778eff2496bbe5ce4983f1494b9f000.jpg/v1/fill/w_1220,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/332e86_bbd1c778eff2496bbe5ce4983f1494b9f000.jpg",
-                        videoUrl:"https://video.wixstatic.com/video/332e86_bbd1c778eff2496bbe5ce4983f1494b9/720p/mp4/file.mp4"
+                        imageUrl: "https://static.wixstatic.com/media/332e86_bbd1c778eff2496bbe5ce4983f1494b9f000.jpg/v1/fill/w_1220,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/332e86_bbd1c778eff2496bbe5ce4983f1494b9f000.jpg",
+                        videoUrl: "https://video.wixstatic.com/video/332e86_bbd1c778eff2496bbe5ce4983f1494b9/720p/mp4/file.mp4"
                     },
                     {
-                        imageUrl:Carolina_thumb1,
-                        videoUrl:"https://video.wixstatic.com/video/332e86_4db09ee478194952949fb6923a798348/480p/mp4/file.mp4"
+                        imageUrl: Carolina_thumb1,
+                        videoUrl: "https://video.wixstatic.com/video/332e86_4db09ee478194952949fb6923a798348/480p/mp4/file.mp4"
                     },
                     {
-                        imageUrl:"https://static.wixstatic.com/media/332e86_4091b764a8774ac5bf1052a100273614f000.jpg/v1/fill/w_1220,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/332e86_4091b764a8774ac5bf1052a100273614f000.jpg",
-                        videoUrl:"https://video.wixstatic.com/video/332e86_4091b764a8774ac5bf1052a100273614/720p/mp4/file.mp4"
+                        imageUrl: "https://static.wixstatic.com/media/332e86_4091b764a8774ac5bf1052a100273614f000.jpg/v1/fill/w_1220,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/332e86_4091b764a8774ac5bf1052a100273614f000.jpg",
+                        videoUrl: "https://video.wixstatic.com/video/332e86_4091b764a8774ac5bf1052a100273614/720p/mp4/file.mp4"
                     }
                 ]
             },
@@ -83,29 +83,29 @@ state: () => ({
                     },
                 ],
                 artwork: [
-                  
+
                     {
-                        imageUrl:Nagatsuro_1
+                        imageUrl: Nagatsuro_1
                     },
                     {
-                        imageUrl:Nagatsuro_2
+                        imageUrl: Nagatsuro_2
                     },
                     {
-                        imageUrl:Nagatsuro_3
+                        imageUrl: Nagatsuro_3
                     },
                     {
-                        imageUrl:Nagatsuro_4
+                        imageUrl: Nagatsuro_4
                     },
                     {
-                        imageUrl:Nagatsuro_5
+                        imageUrl: Nagatsuro_5
                     },
                     {
-                        imageUrl:Nagatsuro_6
+                        imageUrl: Nagatsuro_6
                     },
                     {
-                        imageUrl:Nagatsuro_7
+                        imageUrl: Nagatsuro_7
                     }
-              
+
                 ],
             },
             {
@@ -124,15 +124,15 @@ state: () => ({
                 ],
                 artwork: [
                     {
-                        imageUrl:Armando_1,
-                        videoUrl:Armando_1_video
+                        imageUrl: Armando_1,
+                        videoUrl: Armando_1_video
                     },
                     {
-                        imageUrl:Armando_2,
-                        videoUrl:Armando_2_video
+                        imageUrl: Armando_2,
+                        videoUrl: Armando_2_video
                     },
-                   
-                   
+
+
                 ],
             },
             {
@@ -143,7 +143,7 @@ state: () => ({
                         url: 'https://www.instagram.com/the_whitenight25/ ',
                         hint: 'Instagram',
                     },
-                      {
+                    {
                         type: 'default',
                         url: 'https://www.artstation.com/artwork/14AdbX ',
                         hint: 'Portafolio',
@@ -155,16 +155,16 @@ state: () => ({
                             'https://cdnb.artstation.com/p/assets/images/images/058/414/145/large/thewhitenight-0104c-ruizpangel-proyectofinal-1-1-v001.jpg?1674100265',
                     },
                     {
-                        imageUrl:White_4
+                        imageUrl: White_4
                     },
                     {
-                        imageUrl:White_3
+                        imageUrl: White_3
                     },
                     {
-                        imageUrl:White
+                        imageUrl: White
                     },
                     {
-                        imageUrl:White_2
+                        imageUrl: White_2
                     },
                     {
                         imageUrl:
@@ -178,8 +178,8 @@ state: () => ({
                         imageUrl:
                             'https://cdna.artstation.com/p/assets/images/images/058/741/844/large/thewhitenight-gmnl-v1-1.jpg?1674852377',
                     },
-                  
-             
+
+
                 ],
             },
         ] as Array<Artist>,
@@ -189,7 +189,7 @@ state: () => ({
         videoDialogState: (state) => state.isVideoModalOpened,
         artists: (state): Array<Artist> => state.artistsData,
         imageUrl: (state): string => state.currentDialogImage,
-        videoUrl:(state)=> state.currentVideo,
+        videoUrl: (state) => state.currentVideo,
     },
     actions: {
         toggleDialog(): void {

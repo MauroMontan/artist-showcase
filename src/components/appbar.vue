@@ -14,8 +14,8 @@ const menuState = computed(() => isMenuOpened.value);
 
 <template>
     <header class="appbar">
-        <img alt="casa nomada logo" :src="logo" class="logo" >
-            
+        <img alt="casa nomada logo" :src="logo" class="logo">
+
         <nav class="links">
             <ul>
                 <li>
@@ -27,11 +27,11 @@ const menuState = computed(() => isMenuOpened.value);
                 <li>
                     <a href="#artistas">Artistas</a>
                 </li>
-               
+
                 <li>
-                <a href="#contacto">
-                    Contacto
-                </a>    
+                    <a href="#contacto">
+                        Contacto
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -56,7 +56,7 @@ const menuState = computed(() => isMenuOpened.value);
                 <li>
                     <a href="#artistas">Artistas</a>
                 </li>
-             
+
                 <li>
                     <a href="#contacto">Contacto</a>
                 </li>
@@ -68,13 +68,14 @@ const menuState = computed(() => isMenuOpened.value);
 <style scoped>
 .appbar {
     display: flex;
-    background-color:white;
+
+    background-color: rgb(255, 255, 255, 1);
     position: fixed;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    padding-inline: 2rem;
+    padding-inline: 4rem;
     z-index: 20;
 }
 
@@ -103,6 +104,7 @@ const menuState = computed(() => isMenuOpened.value);
     list-style-type: none;
 }
 
+
 .appbar ul {
     display: flex;
     gap: 1rem;
@@ -110,24 +112,33 @@ const menuState = computed(() => isMenuOpened.value);
 
 .appbar ul li {
     list-style-type: none;
+    padding: 0.2rem;
+}
+
+.appbar ul li:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-weight: bold;
+    text-underline-offset: 5px;
+
 }
 
 .appbar ul li a,
 .mobile-links ul li a {
     text-decoration: none;
     color: inherit;
-    font-weight:200;
+    font-weight: 200;
     transition: all ease-in 0.1s;
 }
 
 
 .appbar ul li a:hover,
 .mobile-links ul li a :hover {
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .logo {
-    width:fit-content;
+    width: fit-content;
     height: 30%;
     object-fit: scale-down;
 }
@@ -143,7 +154,7 @@ const menuState = computed(() => isMenuOpened.value);
         display: none;
     }
 
-    .appbar{
+    .appbar {
         padding: 0.5rem;
     }
 
