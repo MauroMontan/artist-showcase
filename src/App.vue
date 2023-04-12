@@ -11,6 +11,7 @@ import Contact from "./components/contact.vue";
 
 const uiStore = useUi();
 
+
 const { toggleDialog, toggleVideoDialog } = uiStore;
 
 const { artists } = uiStore;

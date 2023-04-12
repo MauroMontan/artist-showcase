@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+
 }
 
 .contact .contact-card .title h1 {
