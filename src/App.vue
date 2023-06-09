@@ -11,7 +11,6 @@ import Contact from "./components/contact.vue";
 
 const uiStore = useUi();
 
-
 const { toggleDialog, toggleVideoDialog } = uiStore;
 
 const { artists } = uiStore;
@@ -67,8 +66,6 @@ html {
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-
-
 
 #app {
     width: 100%;
@@ -143,7 +140,6 @@ html {
     font-weight: bold;
 }
 
-
 footer {
     padding: 1rem;
     display: flex;
@@ -160,7 +156,6 @@ footer .creator {
 }
 
 @media (max-width: 768px) {
-
     .collections {
         width: 100%;
     }
@@ -169,7 +164,6 @@ footer .creator {
         font-size: 1.6rem;
         margin-left: 1rem;
     }
-
 
     .banner {
         height: fit-content;

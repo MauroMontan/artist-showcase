@@ -5,6 +5,12 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "strict": true,
+    "baseUrl":".",
+    "paths": {
+      "@/*": [
+        "./src/*" // set path `@/*` as alias of `src/*`
+      ]
+    },
     "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -13,6 +19,7 @@
     "skipLibCheck": true,
     "noEmit": true
   },
+
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

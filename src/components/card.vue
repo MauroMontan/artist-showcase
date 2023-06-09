@@ -1,7 +1,7 @@
-<script lang='ts' setup >
-import { ref, Ref, computed } from 'vue'
-import Card from '../interfaces/card';
-import { useUi } from '../store';
+<script lang="ts" setup>
+import { computed } from "vue";
+import Card from "../interfaces/card";
+import { useUi } from "../store";
 
 interface Props {
     card: Card;
@@ -9,46 +9,40 @@ interface Props {
 
 const { card } = defineProps<Props>();
 
-const {  imageUrl,videoUrl } = card;
+const { imageUrl, videoUrl } = card;
 
 const uiStore = useUi();
 
-const openImage = ()=>{
+const openImage = () => {
     uiStore.setcurrentImage(imageUrl);
     uiStore.toggleDialog();
-}
+};
 
-const openVideo = ()=>{
+const openVideo = () => {
     uiStore.setcurrentVideo(videoUrl!);
     uiStore.toggleVideoDialog();
-}
+};
 
-const isVideo = computed(()=>{
+const isVideo = computed(() => {
     return videoUrl != undefined;
 });
-
 </script>
 
 <template>
- 
-    <article
-    class="card">
-        <img class="card-image" :src="imageUrl" alt="placholdercad">
+    <article class="card">
+        <img class="card-image" :src="imageUrl" alt="placholdercad" />
         <div class="overlay">
-
             <span v-if="isVideo" @click="openVideo" class="material-symbols-outlined">
                 play_circle
             </span>
             <span v-else @click="openImage" class="material-symbols-outlined">
                 open_in_full
             </span>
-          
-
         </div>
     </article>
 </template>
 
-<style scoped >
+<style scoped>
 * {
     color: white;
 }
@@ -60,7 +54,7 @@ const isVideo = computed(()=>{
     position: relative;
     overflow: hidden;
     user-select: none;
-    border: solid 1px rgba(0,0,0,0.1);
+    border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
@@ -85,13 +79,10 @@ span {
     border-radius: 0 0 0 0.5rem;
     display: flex;
     gap: 1rem;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.overlay span{
+.overlay span {
     font-size: 1.6rem;
 }
-
-
-
 </style>

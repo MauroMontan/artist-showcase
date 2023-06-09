@@ -3,12 +3,12 @@ import Dialog from "./dialog.vue";
 import { useUi } from "../store";
 
 const uiStore = useUi();
+
 interface Emit {
     (event: "toggle-modal"): void;
 }
 const emit = defineEmits<Emit>();
-const {videoUrl} = uiStore;
-
+const { videoUrl } = uiStore;
 </script>
 
 <template>
@@ -29,7 +29,8 @@ const {videoUrl} = uiStore;
     border: none;
     outline: none;
 }
-.video-modal iframe{
+
+.video-modal iframe {
     width: 100%;
     height: 100%;
     border: none;
@@ -37,15 +38,15 @@ const {videoUrl} = uiStore;
     border-radius: 1rem;
 }
 
-@media(max-height:786px){
-    .video-modal{
-    width:90%;
-    aspect-ratio:1/16;
+@media (max-height: 786px) {
+    .video-modal {
+        width: 90%;
+        aspect-ratio: 1/16;
     }
+
     iframe {
-    object-position:center;
-    height:100%;
+        object-position: center;
+        height: 100%;
     }
 }
-
 </style>
