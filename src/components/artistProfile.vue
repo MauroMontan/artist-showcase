@@ -6,7 +6,6 @@ import twitterLogo from "../assets/twitter_logo.svg";
 import tiktokLogo from "../assets/tiktok_logo.svg";
 import defaultLogo from "../assets/link_logo.svg";
 import { useUi } from "../store";
-import Artist from "../interfaces/artist";
 import Network from "../interfaces/network";
 
 const uiStore = useUi();
@@ -18,7 +17,6 @@ interface Props {
 
 const { name, networks } = defineProps<Props>();
 
-const LogoSelector = computed(() => {});
 </script>
 
 <template>
@@ -29,26 +27,10 @@ const LogoSelector = computed(() => {});
             <ul class="networks">
                 <li :title="network.hint" v-for="network in networks">
                     <a target="_blank" :href="network.url">
-                        <img
-                            v-if="network.type === 'facebook'"
-                            :src="fbLogo"
-                            alt="fb icon"
-                        />
-                        <img
-                            v-else-if="network.type === 'instagram'"
-                            :src="IgLogo"
-                            alt="instagram icon"
-                        />
-                        <img
-                            v-else-if="network.type === 'twitter'"
-                            :src="twitterLogo"
-                            alt="twitter icon"
-                        />
-                        <img
-                            v-else-if="network.type === 'tiktok'"
-                            :src="tiktokLogo"
-                            alt="tiktok icon"
-                        />
+                        <img v-if="network.type === 'facebook'" :src="fbLogo" alt="fb icon" />
+                        <img v-else-if="network.type === 'instagram'" :src="IgLogo" alt="instagram icon" />
+                        <img v-else-if="network.type === 'twitter'" :src="twitterLogo" alt="twitter icon" />
+                        <img v-else-if="network.type === 'tiktok'" :src="tiktokLogo" alt="tiktok icon" />
                         <img v-else :src="defaultLogo" alt="default link" />
                     </a>
                 </li>
@@ -64,10 +46,12 @@ const LogoSelector = computed(() => {});
 <style scoped>
 .frame {
     padding: 1rem;
+
 }
 
 .artist-profile {
     display: flex;
+
     height: fit-content;
     align-items: center;
     gap: 0.5rem;
@@ -91,6 +75,7 @@ const LogoSelector = computed(() => {});
     height: fit-content;
 }
 
+
 .artist-profile .networks li {
     list-style-type: none;
 }
@@ -104,6 +89,10 @@ const LogoSelector = computed(() => {});
     font-size: 1.6rem;
     font-weight: bold;
     max-width: 60%;
+}
+
+.icon {
+    color: #7E3EE6;
 }
 
 @media (max-width: 768px) {

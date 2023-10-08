@@ -6,15 +6,15 @@
             <div class="title">
                 <h1>¿Interesado en unirte al equipo?</h1>
                 <p>
-                    Mandame tu reel, portafolio o platicame tu idea al siguiente
-                    correo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In eius dicta nostrum commodi hic nihil officia
+
                 </p>
             </div>
 
-            <a href="mailto: solamentevagotrabajo@gmail.com" class="material-symbols-outlined">
+            <a href="mailto: example@example.com" class="material-symbols-outlined">
                 mail
             </a>
-            <i>solamentevagotrabajo@gmail.com</i>
+            <i>example@example.com</i>
         </div>
     </article>
 </template>

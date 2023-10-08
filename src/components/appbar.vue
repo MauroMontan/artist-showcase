@@ -14,8 +14,7 @@ const menuState = computed(() => isMenuOpened.value);
 
 <template>
     <header class="appbar">
-        <img alt="casa nomada logo" :src="logo" class="logo">
-
+        <h1>Generic gallery</h1>
         <nav class="links">
             <ul>
                 <li>
@@ -44,7 +43,7 @@ const menuState = computed(() => isMenuOpened.value);
         </span>
 
     </header>
-    <div v-if="menuState" class="mobile-menu">
+    <div v-show="menuState" class="mobile-menu">
         <nav class="mobile-links">
             <ul>
                 <li>
@@ -67,29 +66,33 @@ const menuState = computed(() => isMenuOpened.value);
 
 <style scoped>
 .appbar {
-    display: flex;
+    background-color: #EFF1F5;
 
-    background-color: rgb(255, 255, 255, 1);
+    display: flex;
     position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 4rem;
+    padding-inline: 7rem;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    padding-inline: 4rem;
-    z-index: 20;
+    z-index: 30;
 }
 
 .mobile-links {
-    background-color: white;
+    background-color: #EFF1F5;
     position: fixed;
     right: 0;
-    bottom: 1;
-    margin-top: 4rem;
-    z-index: 30;
+    margin: 0;
+    top: 4rem;
+    z-index: 20;
     padding: 1rem;
-    border-radius: 0 0 0 1rem;
+    border-radius: 0 0 0 0.4rem;
     text-align: end;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+    animation: appearsFromTop 0.4s;
 }
 
 
@@ -102,17 +105,22 @@ const menuState = computed(() => isMenuOpened.value);
 
 .mobile-links ul li {
     list-style-type: none;
+
 }
 
+.links {
+    width: max-content;
+}
 
 .appbar ul {
     display: flex;
-    gap: 1rem;
+    width: 100%;
+    gap: 2rem;
 }
 
 .appbar ul li {
     list-style-type: none;
-    padding: 0.2rem;
+    width: max-content;
 }
 
 .appbar ul li:hover {
@@ -120,15 +128,14 @@ const menuState = computed(() => isMenuOpened.value);
     text-decoration: underline;
     font-weight: bold;
     text-underline-offset: 5px;
-
 }
 
 .appbar ul li a,
 .mobile-links ul li a {
     text-decoration: none;
     color: inherit;
-    font-weight: 200;
-    transition: all ease-in 0.1s;
+
+    font-weight: bold;
 }
 
 
@@ -149,18 +156,32 @@ const menuState = computed(() => isMenuOpened.value);
     cursor: pointer;
 }
 
+h1 {
+    font-size: 1rem;
+}
+
 @media (max-width:768px) {
     .links {
         display: none;
     }
 
     .appbar {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .burger {
         display: flex;
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes appearsFromTop {
+    0% {
+        transform: translateY(-200px)
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 </style>

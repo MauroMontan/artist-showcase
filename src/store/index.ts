@@ -1,21 +1,5 @@
 import { defineStore } from 'pinia';
 import Artist from '../interfaces/artist';
-import Armando_1 from "../assets/artwork/Armando/photo1674244574.jpeg"
-import Armando_1_video from "../assets/artwork/Armando/video5069272976604529394.mp4"
-import Armando_2_video from "../assets/artwork/Armando/video5069272976604529393.mp4";
-import Armando_2 from "../assets/artwork/Armando/ssp_thumb.png";
-import White from "../assets/artwork/White/TheWhiteNight_Obras/Jack_1_0001.png";
-import White_2 from "../assets/artwork/White/TheWhiteNight_Obras/Jack_1_0002.png";
-import White_3 from "../assets/artwork/White/TheWhiteNight_Obras/0312-a_RuizPAngelA_Render_002.jpg";
-import White_4 from "../assets/artwork/White/TheWhiteNight_Obras/0104C_RuizPAngel_ProyectoFinal_6_1_v001.png"
-import Carolina_thumb1 from "../assets/artwork/Carolina/carolina_thumb_story.png";
-import Nagatsuro_1 from "../assets/artwork/Nagatsuro/nagatsuro1.jfif";
-import Nagatsuro_2 from "../assets/artwork/Nagatsuro/nagatsuro2.jfif";
-import Nagatsuro_3 from "../assets/artwork/Nagatsuro/nagatsuro3.jfif";
-import Nagatsuro_4 from "../assets/artwork/Nagatsuro/nagatsuro4.jpg";
-import Nagatsuro_5 from "../assets/artwork/Nagatsuro/nagatsuro5.jfif";
-import Nagatsuro_6 from "../assets/artwork/Nagatsuro/nagatsuro6.jfif";
-import Nagatsuro_7 from "../assets/artwork/Nagatsuro/nagatsuro7.jpg";
 
 export const useUi = defineStore('uiStore', {
 
@@ -27,156 +11,153 @@ export const useUi = defineStore('uiStore', {
             'https://images.theconversation.com/files/471068/original/file-20220627-18-zlq7b6.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop',
         artistsData: [
             {
-                name: "Carolina Uribe Sánchez",
+                name: "Artist Number 1 name",
                 networks: [
                     {
                         type: "instagram",
-                        url: "https://www.instagram.com/creati_caro/",
+                        url: "#",
                         hint: "Instagram"
                     },
                     {
                         type: "portfolio",
-                        url: "https://creaticaro.wixsite.com/creator",
+                        url: "#",
                         hint: "Portfolio"
                     }
                 ],
                 artwork: [
                     {
-                        imageUrl: "https://static.wixstatic.com/media/332e86_5e0ad03b7f6e46ebaa85e28a960f22cef000.jpg/v1/fill/w_314,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_5e0ad03b7f6e46ebaa85e28a960f22cef000.jpg"
+                        imageUrl: "https://images.unsplash.com/photo-1696694809606-42f097934282?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
 
                     },
-                    { imageUrl: "https://static.wixstatic.com/media/332e86_c2206ab1df3a499b8fe59eb39bc73259f000.jpg/v1/fill/w_313,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_c2206ab1df3a499b8fe59eb39bc73259f000.jpg" },
+                    { imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80" },
                     {
-                        imageUrl: "https://static.wixstatic.com/media/332e86_cc549ba7eaf4473190260b6c22c86f16f000.jpg/v1/fill/w_313,h_788,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/332e86_cc549ba7eaf4473190260b6c22c86f16f000.jpg"
+                        imageUrl: "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2942&q=80"
                     },
                     {
-                        imageUrl: "https://static.wixstatic.com/media/332e86_bbd1c778eff2496bbe5ce4983f1494b9f000.jpg/v1/fill/w_1220,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/332e86_bbd1c778eff2496bbe5ce4983f1494b9f000.jpg",
-                        videoUrl: "https://video.wixstatic.com/video/332e86_bbd1c778eff2496bbe5ce4983f1494b9/720p/mp4/file.mp4"
+                        imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2765&q=80"
                     },
                     {
-                        imageUrl: Carolina_thumb1,
-                        videoUrl: "https://video.wixstatic.com/video/332e86_4db09ee478194952949fb6923a798348/480p/mp4/file.mp4"
+                        imageUrl: "https://images.unsplash.com/photo-1603356033288-acfcb54801e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2960&q=80",
                     },
-                    {
-                        imageUrl: "https://static.wixstatic.com/media/332e86_4091b764a8774ac5bf1052a100273614f000.jpg/v1/fill/w_1220,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/332e86_4091b764a8774ac5bf1052a100273614f000.jpg",
-                        videoUrl: "https://video.wixstatic.com/video/332e86_4091b764a8774ac5bf1052a100273614/720p/mp4/file.mp4"
-                    }
+
                 ]
             },
             {
-                name: 'Nagisa Fitz (Nagatsuro)',
+                name: 'Artist Number 2 name',
                 networks: [
                     {
                         type: 'twitter',
-                        url: 'https://twitter.com/_Nagatsuro_',
+                        url: '#',
                         hint: 'Twitter',
                     },
                     {
                         type: 'instagram',
-                        url: 'https://www.instagram.com/nagatsuro/',
+                        url: '#',
                         hint: 'Instagram',
                     },
                     {
                         type: 'tiktok',
-                        url: 'https://www.tiktok.com/@nagatsuro',
+                        url: '#',
                         hint: 'TikTok',
                     },
                 ],
                 artwork: [
 
                     {
-                        imageUrl: Nagatsuro_1
+                        imageUrl: "https://images.unsplash.com/photo-1558877385-81a1c7e67d72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
                     },
                     {
-                        imageUrl: Nagatsuro_2
+                        imageUrl: "https://images.unsplash.com/photo-1530325553241-4f6e7690cf36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
                     },
                     {
-                        imageUrl: Nagatsuro_3
+                        imageUrl: "https://images.unsplash.com/photo-1582845512747-e42001c95638?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
                     },
                     {
-                        imageUrl: Nagatsuro_4
+                        imageUrl: "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2960&q=80"
                     },
                     {
-                        imageUrl: Nagatsuro_5
+                        imageUrl: "https://images.unsplash.com/photo-1546776230-bb86256870ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3210&q=80"
                     },
-                    {
-                        imageUrl: Nagatsuro_6
-                    },
-                    {
-                        imageUrl: Nagatsuro_7
-                    }
+
 
                 ],
             },
             {
-                name: 'Armando Carrillo Garcia',
+                name: 'Artist Number 3 name',
                 networks: [
                     {
                         type: 'facebook',
-                        url: 'https://www.facebook.com/armando.carrillogarcia.79/',
+                        url: '#',
                         hint: 'Facebook',
                     },
                     {
                         type: 'instagram',
-                        url: 'https://www.instagram.com/artmandlecar/',
+                        url: '#',
                         hint: 'Instagram',
                     },
                 ],
                 artwork: [
                     {
-                        imageUrl: Armando_1,
-                        videoUrl: Armando_1_video
+                        imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
                     },
                     {
-                        imageUrl: Armando_2,
-                        videoUrl: Armando_2_video
+                        imageUrl: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80",
+
                     },
+                    {
+                        imageUrl: "https://images.unsplash.com/photo-1562229125-6d6075419a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80"
+                    }, {
+                        imageUrl: "https://plus.unsplash.com/premium_photo-1668046107866-18eb972d45f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80"
+                    },
+                    {
+                        imageUrl: "https://plus.unsplash.com/premium_photo-1668046107746-ffcc1ca3498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80"
+                    }
 
 
                 ],
             },
             {
-                name: 'Angel Alexis Ruiz Perez (The WhiteNight)',
+                name: 'Artist number 4 name',
                 networks: [
                     {
                         type: 'instagram',
-                        url: 'https://www.instagram.com/the_whitenight25/ ',
+                        url: '#',
                         hint: 'Instagram',
                     },
                     {
                         type: 'default',
-                        url: 'https://www.artstation.com/artwork/14AdbX ',
+                        url: '#',
                         hint: 'Portafolio',
                     },
                 ],
                 artwork: [
                     {
                         imageUrl:
-                            'https://cdnb.artstation.com/p/assets/images/images/058/414/145/large/thewhitenight-0104c-ruizpangel-proyectofinal-1-1-v001.jpg?1674100265',
+                            "https://plus.unsplash.com/premium_photo-1669056783712-a3b0b8505f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80",
                     },
                     {
-                        imageUrl: White_4
+                        imageUrl: "https://plus.unsplash.com/premium_photo-1669137055739-4cdaddc1a709?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
                     },
                     {
-                        imageUrl: White_3
+                        imageUrl: "https://plus.unsplash.com/premium_photo-1669056783989-d5ade080793c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
                     },
                     {
-                        imageUrl: White
+                        imageUrl: "https://images.unsplash.com/photo-1632001605595-a8b79b435e7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
                     },
                     {
-                        imageUrl: White_2
-                    },
-                    {
-                        imageUrl:
-                            'https://cdnb.artstation.com/p/assets/images/images/040/532/337/large/angel-alexis-ruiz-perez-gargola-aarp.jpg?1629143947',
+                        imageUrl: "https://images.unsplash.com/photo-1600184430626-1dd6087315d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3106&q=80"
                     },
                     {
                         imageUrl:
-                            'https://cdnb.artstation.com/p/assets/images/images/057/404/797/large/thewhitenight-helmet1.jpg?1671514255',
+                            'https://images.unsplash.com/photo-1615224572756-729e7d1cd942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80',
                     },
                     {
                         imageUrl:
-                            'https://cdna.artstation.com/p/assets/images/images/058/741/844/large/thewhitenight-gmnl-v1-1.jpg?1674852377',
+                            'https://images.unsplash.com/photo-1614961234274-f204d01c115e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80',
+                    },
+                    {
+                        imageUrl:
+                            'https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80',
                     },
 
 

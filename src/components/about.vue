@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Logo from "../assets/favicon.png";
+
 </script>
 
 <template>
@@ -7,13 +7,13 @@ import Logo from "../assets/favicon.png";
 
         <p>
         <h1>¿Quienes somos?</h1>
-        Somos una casa hecha por y para artistas, nos reunimos para
-        desarrollar proyectos independientes donde cualquiera puede proponer
-        y dirigir un proyecto en conjunto de un grupo de talentosos
-        artistas.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ex eligendi nobis temporibus perferendis
+        culpa distinctio sed atque ipsam, soluta deleniti tenetur, maiores similique aliquam dicta iusto. Aspernatur, ipsum
+        quos.
         </p>
 
-        <img :src="Logo" alt="Casa Nomada logo">
+        <img src="https://plus.unsplash.com/premium_photo-1684923604860-64e661f2ff72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlYXRyb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60"
+            alt="Casa Nomada logo">
     </article>
 </template>
 
@@ -26,13 +26,13 @@ import Logo from "../assets/favicon.png";
     margin: auto;
     padding: 2rem;
     align-items: center;
-    background-color: rgb(173, 215, 230, 0.1);
     justify-content: space-around;
 
 }
 
 .about p h1 {
     font-size: 2rem;
+    width: max-content;
 }
 
 .about p {
@@ -47,17 +47,28 @@ import Logo from "../assets/favicon.png";
 
 img {
     width: 20%;
-    height: 20%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
 }
 
 @media (max-width: 768px) {
     .about {
         display: flex;
-        flex-direction: column;
         gap: 0.5rem;
         padding: 1rem;
         margin: auto;
-        width: 95%;
+        align-items: center;
+        width: 90%;
+    }
+
+    img {
+        display: none;
+    }
+
+    .about p {
+        width: 100%;
+        font-size-adjust: 0.4;
     }
 
     .about p h1 {

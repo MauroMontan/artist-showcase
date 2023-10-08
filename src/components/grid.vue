@@ -6,24 +6,11 @@ const wrapper: Ref<HTMLElement | null> = ref(null);
 const scrollStep: number = 2;
 
 
-const wheelBeh = () => {
-    wrapper.value!.addEventListener("wheel", (event: any) => {
-        event.preventDefault();
- 
-        if ( event.deltaY < 0) {
-            wrapper.value!.scrollLeft -= scrollStep;
-        }
-        if (event.deltaY > 0 ) {
-            wrapper.value!.scrollLeft += scrollStep;
-        }
-    });
-
-}
 
 </script>
 
 <template>
-    <article @wheel="wheelBeh" ref="wrapper" class="grid">
+    <article class="grid">
         <slot />
 
     </article>
@@ -34,13 +21,13 @@ const wheelBeh = () => {
     display: flex;
     width: 100%;
     height: 24rem;
-    overflow-x:scroll;
+    overflow-x: scroll;
     gap: 1rem;
-    padding:0.5rem;
+    padding: 0.5rem;
+    scroll-snap-type: x mandatory;
 }
 
 .grid::-webkit-scrollbar {
     display: none;
 }
-
 </style>

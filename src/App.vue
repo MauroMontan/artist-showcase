@@ -28,7 +28,7 @@ const { artists } = uiStore;
     <About></About>
 
     <article id="artistas" class="collections">
-        <h2>Nuestros Artistas</h2>
+        <h2>Our Artists</h2>
 
         <ArtistCollection v-for="artist in artists" :artist="artist"></ArtistCollection>
     </article>
@@ -37,7 +37,7 @@ const { artists } = uiStore;
 
     <footer>
         <p>
-            Copyright © 2023 Casa productora Nómada. Todos los derechos
+            Copyright © 2023 @MauroMontan. Todos los derechos
             reservados.
         </p>
         <p class="creator">made by @MauroMontan</p>
@@ -69,9 +69,9 @@ html {
 
 #app {
     width: 100%;
-    display: flex;
     gap: 1rem;
     flex-direction: column;
+    background-color: #EFF1F5;
 }
 
 .collections {

@@ -19,15 +19,10 @@ const { artwork, networks, name } = artist;
 </script>
 
 <template>
-
-    <div 
-    v-motion-slide-visible-once-bottom
-     class="artist-collection">
-        <ArtistProfile :name="name" :networks="networks" ></ArtistProfile>
+    <div v-motion-slide-visible-once-bottom class="artist-collection">
+        <ArtistProfile :name="name" :networks="networks"></ArtistProfile>
         <Grid>
-            <CardVue 
-           
-            v-for="art in artwork" :card="art">
+            <CardVue v-for="art in artwork" :card="art">
             </CardVue>
         </Grid>
     </div>
@@ -35,15 +30,16 @@ const { artwork, networks, name } = artist;
 
 <style scoped>
 .artist-collection {
+    background-color: #E7E9EE;
     display: flex;
     flex-direction: column;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.03) 0px 10px 36px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
     gap: 0.2rem;
     padding: 0.5rem;
     margin: auto;
     width: 90%;
-    height:fit-content;
+    height: fit-content;
 
 }
 
